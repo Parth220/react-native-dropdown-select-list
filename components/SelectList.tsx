@@ -53,7 +53,7 @@ const SelectList: React.FC<SelectListProps> =  ({
         setDropdown(true)
         Animated.timing(animatedvalue,{
             toValue:height,
-            duration:500,
+            duration:200,
             useNativeDriver:false,
             
         }).start()
@@ -62,7 +62,7 @@ const SelectList: React.FC<SelectListProps> =  ({
         
         Animated.timing(animatedvalue,{
             toValue:0,
-            duration:500,
+            duration:200,
             useNativeDriver:false,
             
         }).start(() => setDropdown(false))
